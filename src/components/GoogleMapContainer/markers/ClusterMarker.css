@@ -1,0 +1,9 @@
+.clustermarker {
+    width: 53px;
+    height: 32px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    color: yellow;
+    background-image: url(/assets/m1.png);
+}

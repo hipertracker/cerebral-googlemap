@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="33px" viewBox="0 0 23 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Locator/Branch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Locator/Branch">
+            <path d="M19.6323686,3.37700115 C15.1421975,-1.12566705 7.86051341,-1.12566705 3.36862128,3.37700115 C-0.679244733,7.43596317 -1.13359704,15.0825573 2.30158177,19.6750026 L11.500495,33 L20.7011292,19.6750026 C24.1328659,15.0825573 23.6785136,7.43596317 19.6323686,3.37700115" id="Fill-1-Copy" fill="#1585AC"></path>
+            <path d="M11.614083,15.2310348 C9.51614568,15.2310348 7.81748762,13.5269959 7.81748762,11.4224129 C7.81748762,9.32128283 9.51614568,7.61379094 11.614083,7.61379094 C13.7102994,7.61379094 15.4089574,9.32128283 15.4089574,11.4224129 C15.4089574,13.5269959 13.7102994,15.2310348 11.614083,15.2310348" id="Path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

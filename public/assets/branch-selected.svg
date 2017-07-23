@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="56px" viewBox="0 0 39 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Locator/Select</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Locator/Select">
+            <path d="M33.2896686,5.73066862 C25.6759002,-1.91022287 13.3286966,-1.91022287 5.71200999,5.73066862 C-1.15176281,12.6186042 -1.92218629,25.5946427 3.90268213,33.3878832 L19.5008393,56 L35.1019147,33.3878832 C40.9209466,25.5946427 40.1505231,12.6186042 33.2896686,5.73066862" id="Fill-1-Copy-4" fill="#58BEDB"></path>
+            <path d="M19.6934451,25.8466046 C16.1360731,25.8466046 13.2557399,22.9549022 13.2557399,19.3834885 C13.2557399,15.8179345 16.1360731,12.9203725 19.6934451,12.9203725 C23.2478989,12.9203725 26.1282321,15.8179345 26.1282321,19.3834885 C26.1282321,22.9549022 23.2478989,25.8466046 19.6934451,25.8466046" id="Path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
