@@ -1,7 +1,8 @@
 # cerebral-googlemap
 
-Example of using [Cerebral](http://cerebraljs.com/) 
-and [google-map-clustering-example](https://github.com/istarkov/google-map-clustering-example). 
+Simple example of using [Cerebral](http://cerebraljs.com/) 
+and [istarkov/google-map-react](https://github.com/istarkov/google-map-react) (inspired by
+[istarkov/google-map-clustering-example](https://github.com/istarkov/google-map-clustering-example)). 
 
 ## Start
 
