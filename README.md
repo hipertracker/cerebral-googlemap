@@ -8,5 +8,5 @@ and [google-map-clustering-example](https://github.com/istarkov/google-map-clust
 ```
 npm i
 npm start
-open at http://localhost:3000
+open http://localhost:3000
 ```
