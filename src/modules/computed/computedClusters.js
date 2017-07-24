@@ -6,16 +6,26 @@ const computedClusters = compute(
   state`gmap.mapProps`,
   state`gmap.markers`,
   state`gmap.clusterOptions`,
-  (mapProps, dataMarkers, clusterOptions) => {
-    const getCluster = supercluster(dataMarkers, {...clusterOptions})
+  (mapProps, dataMarkers, {minZoom, maxZoom, radius}) => {
     if (!mapProps.bounds) return []
-    return getCluster(mapProps).map(({wx, wy, numPoints, points}) => ({
+
+    const getCluster = supercluster(
+      dataMarkers,
+      {
+        minZoom,
+        maxZoom,
+        radius,
+      }
+    )
+
+    const clusters = getCluster(mapProps).map(({wx, wy, numPoints, points}) => ({
       lat: wy,
       lng: wx,
       numPoints,
       points,
       id: `${numPoints}_${points[0].id}`,
     }))
+    return clusters
   },
 )
 

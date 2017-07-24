@@ -1,11 +1,16 @@
+# cerebral-googlemap
 
 Example of using [Cerebral](http://cerebraljs.com/) 
 and [google-map-clustering-example](https://github.com/istarkov/google-map-clustering-example). 
-Unfortunately the cluster icon position on the map is very inaccurate :(
 
-Start and test at http://localhost:3000
+## Start
 
 ```
 npm i
 npm start
+open at http://localhost:3000
 ```
+## Issues
+
+The cluster icon is not positioned in right place when zoom in/out.
+

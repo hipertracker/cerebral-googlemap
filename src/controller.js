@@ -1,28 +1,34 @@
 import { Controller } from 'cerebral'
 import Devtools from 'cerebral/devtools'
-import Useragent from '@cerebral/useragent'
-
 import { set } from 'cerebral/operators'
 import { props, state } from 'cerebral/tags'
 
+const ireland = {
+  lat: 53.42429531608128,
+  lng: -7.61804229375002
+}
+
 export default Controller({
+
+  // http://cerebraljs.com/docs/introduction/debugger.html
   devtools: Devtools({
     host: '127.0.0.1:8585',
   }),
+
   state: {
     gmap: {
-      defaultCenter: [53.42429531608128, -7.618042293750029],
-      defaultZoom: 7,
+      defaultCenter: ireland,
+      defaultZoom: 6,
       mapProps: {
-        center: {lat: 53.42429531608128, lng: -7.61804229375002},
-        zoom: 9,
+        center: ireland,
+        zoom: 6,
       },
       clusterOptions: {
         radius: 60,
         minZoom: 3,
         maxZoom: 15,
       },
-      markerSelected: 1,
+      markerSelected: 'rathmines',
       markers: [
         {id: 'rathmines', lat: 53.323218, lng: -6.265559, title: 'Ratchmines'},
         {id: 'temple', lat: 53.345573, lng: -6.2635, title: 'Temple'},
@@ -33,18 +39,8 @@ export default Controller({
       ],
     },
   },
+
   signals: {
     mapChanged: set(state`gmap.mapProps`, props`mapProps`),
-  },
-  modules: {
-    useragent: Useragent({
-      media: {
-        mobile: '(max-width: 640px)',
-        small: '(max-width: 1024px)',
-        large: '(min-width: 1025px)',
-      },
-      feature: false, // store all feature tests in model
-      window: true, // update window size on resize
-    }),
   },
 })

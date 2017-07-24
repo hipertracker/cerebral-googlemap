@@ -15,8 +15,8 @@ export default connect({
   },
   function GoogleMapContainer ({defaultCenter, defaultZoom, mapProps, mapChanged, clusters}) {
     const mapStyle = {
-      width: 1000,
-      height: 400,
+      width: 800,
+      height: 450,
     }
 
     const markers = clusters.map(({id, lat, lng, numPoints, points}) => {
@@ -27,14 +27,9 @@ export default connect({
       }
     })
 
-    const bootstrapURLKeys = {
-      key: 'AIzaSyDWcbVjFUuCCi-PoWmmf7jImKbBRYOFwYU',
-    }
-
     return (
       <div style={mapStyle}>
-        <GoogleMap bootstrapURLKeys={bootstrapURLKeys}
-                   defaultCenter={defaultCenter}
+        <GoogleMap defaultCenter={defaultCenter}
                    defaultZoom={defaultZoom}
                    mapProps={mapProps}
                    onChange={mapProps => mapChanged({mapProps})}>
