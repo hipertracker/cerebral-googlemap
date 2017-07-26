@@ -14,21 +14,26 @@ export default connect({
     clusters: computedClusters,
   },
   function GoogleMapContainer ({defaultCenter, defaultZoom, mapProps, mapChanged, clusters}) {
-    const mapStyle = {
-      width: 800,
-      height: 450,
+    const defaultMapSize = {
+      width: 1000,
+      height: 500,
     }
-
+    let branchesCount = 0
+    let clustesCount = 0
     const markers = clusters.map(({id, lat, lng, numPoints, points}) => {
       if (numPoints > 1) {
+        clustesCount++
         return <ClusterMarker key={id} lat={lat} lng={lng} num={numPoints}/>
       } else {
+        branchesCount++
         return <Marker key={id} id={id} lat={lat} lng={lng} point={points[0]}/>
       }
     })
+    console.log('clustesCount:', clustesCount)
+    console.log('branchesCount:', branchesCount)
 
     return (
-      <div style={mapStyle}>
+      <div style={mapProps.size || defaultMapSize }>
         <GoogleMap defaultCenter={defaultCenter}
                    defaultZoom={defaultZoom}
                    mapProps={mapProps}

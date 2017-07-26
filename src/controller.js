@@ -1,7 +1,6 @@
 import { Controller } from 'cerebral'
 import Devtools from 'cerebral/devtools'
-import { set } from 'cerebral/operators'
-import { props, state } from 'cerebral/tags'
+import mapChanged from 'modules/sequences/mapChanged'
 
 const ireland = {
   lat: 53.42429531608128,
@@ -18,10 +17,10 @@ export default Controller({
   state: {
     gmap: {
       defaultCenter: ireland,
-      defaultZoom: 6,
+      defaultZoom: 9,
       mapProps: {
         center: ireland,
-        zoom: 6,
+        zoom: 9,
       },
       clusterOptions: {
         radius: 60,
@@ -41,6 +40,6 @@ export default Controller({
   },
 
   signals: {
-    mapChanged: set(state`gmap.mapProps`, props`mapProps`),
+    mapChanged
   },
 })
